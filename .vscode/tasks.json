@@ -1,0 +1,54 @@
+{
+  "tasks": [
+    {
+      "type": "cppbuild",
+      "label": "C/C++: g++ arquivo de build ativo",
+      "command": "C:\\MinGW\\bin\\g++.exe",
+      "args": [
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "Tarefa gerada pelo Depurador."
+    }
+  ],
+  "version": "2.0.0"
+  /*
+   "version": "2.0.0",
+   "command": "cpp", //⭐cpp changed to g++
+   "type": "shell",
+   "presentation": {
+     "echo": true,
+     "reveal": "always",
+     "focus": false,
+     "panel": "shared",
+     "showReuseMessage": true,
+     "clear": false
+   },
+   //"args": ["-g", "${file}", "-o", "${fileDirname}\\${fileBasenameNoExtension}.exe"],
+   "args": ["-g", "${file}","-o", "${workspaceFolder}\\${fileBasenameNoExtension}.exe"],
+   "problemMatcher": {
+     "owner": "cpp",
+     "fileLocation": ["relative", "${workspaceRoot}"],
+     "pattern": {
+       "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+       "file": 1,
+       "line": 2,
+       "column": 3,
+       "severity": 4,
+       "message": 5
+     }
+   }
+   */
+ }
